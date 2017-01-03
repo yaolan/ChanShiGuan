@@ -1,16 +1,16 @@
-package com.app.chanshiguan;
+package com.app.chanshiguan.ui;
 
 import android.os.Bundle;
 
+import com.app.chanshiguan.R;
+
 import cn.droidlover.xdroid.base.XActivity;
 
-public class MainActivity extends XActivity {
+/**
+ * Created by lyao on 2017/1/3.
+ */
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
+public class LoginActivity extends XActivity {
     @Override
     public void initData(Bundle savedInstanceState) {
 

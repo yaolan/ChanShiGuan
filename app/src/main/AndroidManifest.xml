@@ -19,13 +19,22 @@
             android:name="ml_channel"
             android:value="xiaomi"/>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <!--<activity-->
+            <!--android:name=".ui.LoginActivity"-->
+            <!--android:configChanges="orientation|keyboardHidden|keyboard"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/AppFullTheme"-->
+            <!--android:windowSoftInputMode="stateHidden|adjustResize" />-->
     </application>
 
 </manifest>
