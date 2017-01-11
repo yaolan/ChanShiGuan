@@ -1,9 +1,11 @@
 package com.app.chanshiguan.ui;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.app.chanshiguan.R;
 
+import butterknife.OnClick;
 import cn.droidlover.xdroid.base.XActivity;
 
 /**
@@ -11,6 +13,8 @@ import cn.droidlover.xdroid.base.XActivity;
  */
 
 public class LoginActivity extends XActivity {
+
+
     @Override
     public void initData(Bundle savedInstanceState) {
 
@@ -19,6 +23,16 @@ public class LoginActivity extends XActivity {
     @Override
     public void setListener() {
 
+
+    }
+
+    @OnClick({R.id.close})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.close:
+                finish();
+                break;
+        }
     }
 
     @Override
