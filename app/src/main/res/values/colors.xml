@@ -8,6 +8,8 @@
     <color name="primary_color_dark">#FFA000</color>>
     <color name="primary_color_accent">#9e9e9e</color>>
     <color name="primary_txt_color">#212121</color>>
+    <color name="light_primary_color">#ffecb3</color>>
+
 
     <color name="primary_txt_color2">#757575</color>>
     <drawable name="translucent_background">#e0000000</drawable>

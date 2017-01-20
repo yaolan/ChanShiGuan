@@ -65,5 +65,7 @@ dependencies {
     apt rootProject.ext.dependencies["butterknife-apt"]
     compile rootProject.ext.dependencies["avi-loading"]
     compile project(':library')
+
+    compile 'com.afollestad.material-dialogs:core:0.9.2.3'
 }
 

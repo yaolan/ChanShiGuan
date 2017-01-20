@@ -28,13 +28,13 @@
         </activity>
 
 
-        <!--<activity-->
-            <!--android:name=".ui.LoginActivity"-->
-            <!--android:configChanges="orientation|keyboardHidden|keyboard"-->
-            <!--android:launchMode="singleTask"-->
-            <!--android:screenOrientation="portrait"-->
-            <!--android:theme="@style/AppFullTheme"-->
-            <!--android:windowSoftInputMode="stateHidden|adjustResize" />-->
+        <activity
+            android:name=".ui.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
     </application>
 
 </manifest>

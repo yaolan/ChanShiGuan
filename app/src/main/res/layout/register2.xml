@@ -20,16 +20,6 @@
             android:src="@drawable/ic_highlight_off_black_24dp" />
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="20dp"
-            android:text="Hello 铲屎官"
-            android:textColor="@color/primary_txt_color"
-            android:textSize="35sp" />
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,10 +31,8 @@
 
 
             <RelativeLayout
-                android:id="@+id/name_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
 
                 <com.app.chanshiguan.widget.LoginEditText
                     android:id="@+id/editPhone"
@@ -62,81 +50,66 @@
                     android:textCursorDrawable="@null"
                     android:textSize="20sp" />
 
-
             </RelativeLayout>
 
 
             <RelativeLayout
-                android:id="@+id/layout_password"
+                android:id="@+id/layoutSms"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:visibility="visible">
 
                 <com.app.chanshiguan.widget.LoginEditText
-                    android:id="@+id/editPassword"
+                    android:id="@+id/editVoiceCode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_weight="4"
                     android:background="@drawable/login_edit_normal"
-                    android:hint="密码"
+                    android:hint="验证码"
                     android:imeOptions="actionUnspecified"
-                    android:inputType="textPassword"
+                    android:inputType="number"
+                    android:maxLength="4"
                     android:maxLines="1"
-                    android:paddingRight="20dp"
                     android:singleLine="true"
                     android:textColor="@color/primary_txt_color"
                     android:textColorHint="@color/primary_txt_color"
                     android:textCursorDrawable="@null"
                     android:textSize="20sp" />
 
-                <ImageButton
-                    android:id="@+id/password_eye"
+                <TextView
+                    android:background="@color/light_primary_color"
+                    android:id="@+id/resend_code"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:background="@drawable/ic_visibility_off_black_24dp"
-                    android:paddingLeft="10dp" />
-
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:text="获取验证码"
+                    android:textColor="@color/primary_txt_color"
+                    android:textSize="20sp" />
             </RelativeLayout>
 
-            <RelativeLayout
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginTop="20dp">
+                android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/register"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="立即注册"
+
+                <Button
+                    android:id="@+id/loginButton"
+                    style="?android:textAppearanceButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/login_button"
+                    android:text="注册"
                     android:textColor="@color/primary_txt_color"
                     android:textSize="20sp" />
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:text="忘记密码"
-                    android:textColor="@color/primary_txt_color"
-                    android:textSize="20sp" />
-
-
-            </RelativeLayout>
-
-
-            <Button
-                android:id="@+id/loginButton"
-                style="?android:textAppearanceButton"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="60dp"
-                android:background="@drawable/login_button"
-                android:text="登录"
-                android:textColor="@color/primary_txt_color"
-                android:textSize="20sp" />
+            </LinearLayout>
 
 
         </LinearLayout>
